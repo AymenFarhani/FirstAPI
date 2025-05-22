@@ -45,7 +45,7 @@ namespace FirstAPI.Controllers
                     Projects = projects
                 };
                 return Results.Ok(response);
-            });
+            }).RequireAuthorization();
 
             app.MapGet("/projects/{id}", async (int id, ProjectDBContext db) =>
             {
@@ -53,7 +53,7 @@ namespace FirstAPI.Controllers
                     is Project project
                         ? Results.Ok(project)
                         : Results.NotFound();
-            });
+            }).RequireAuthorization();
 
             app.MapPost("/projects", async (Project project, ProjectDBContext db, IValidator<Project> validator) =>
             {
@@ -71,7 +71,7 @@ namespace FirstAPI.Controllers
                 
 
                 return Results.Created($"/projects/{project.Id}", project);
-            });
+            }).RequireAuthorization();
 
             app.MapPut("/projects/{id}", async (int id, Project inputProject, ProjectDBContext db, IValidator<Project> validator) =>
             {
@@ -94,7 +94,7 @@ namespace FirstAPI.Controllers
                 await db.SaveChangesAsync();
 
                 return Results.NoContent();
-            });
+            }).RequireAuthorization();
 
             app.MapDelete("/projects/{id}", async (int id, ProjectDBContext db) =>
             {
@@ -109,7 +109,7 @@ namespace FirstAPI.Controllers
                 await transaction.CommitAsync();
 
                 return Results.NoContent();
-            });
+            }).RequireAuthorization();
         }
     }
 }
