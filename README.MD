@@ -9,6 +9,7 @@ A simple ASP.NET Core Web API project demonstrating fundamental concepts such as
 - FluentValidation: Library for building strongly-typed validation rules.
 - Dependency Injection: Built-in support for managing dependencies and promoting modular architecture.
 - Configuration Files: Utilizes appsettings.json and appsettings.Development.json for environment-specific settings.
+- Basic security Authentication process 
 - Containerization: shipping and deploying the application using Docker
 - .editorconfig: Defines consistent coding styles across the project.
 - Visual Studio Solution (.sln): Organizes project files for development in Visual Studio.
@@ -20,6 +21,7 @@ A simple ASP.NET Core Web API project demonstrating fundamental concepts such as
 - Persistence/: Data context and database-related configurations.
 - Exceptions/: Custom exception classes for error handling.
 - Filters/: Action filters for cross-cutting concerns like logging and error handling.
+- Authentication: Basic security process
 - Properties/: Project properties and settings.
 - Dockerfile and docker-compose.yml files for the shipping and deployment
 
