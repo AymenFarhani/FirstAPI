@@ -1,0 +1,51 @@
+### Get all projects (with optional query params)
+GET http://localhost:8081/projects?search=Project&pageNumber=1&pageSize=5
+Accept: application/json
+
+###
+
+### Get a project by ID
+GET http://localhost:8081/projects/1
+Accept: application/json
+
+###
+
+### Create a new project
+POST http://localhost:8081/projects
+Content-Type: application/json
+
+{
+  "title": "New API Project",
+  "description": "Building a minimal Web API",
+  "startDate": "2024-05-01T00:00:00",
+  "budget": 12000.5,
+  "status": "NotStarted",
+  "contributors": [
+    "Alice",
+    "Bob"
+  ]
+}
+
+###
+
+### Update an existing project
+PUT http://localhost:8081/projects/1
+Content-Type: application/json
+
+{
+  "title": "Updated Project Title",
+  "description": "Updated description for the project",
+  "startDate": "2024-04-20T00:00:00",
+  "budget": 15000,
+  "status": "InProgress",
+  "contributors": [
+    "Alice",
+    "Charlie"
+  ]
+}
+
+###
+
+### Delete a project by ID
+DELETE http://localhost:8081/projects/1
+
