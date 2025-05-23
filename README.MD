@@ -10,6 +10,7 @@ A simple ASP.NET Core Web API project demonstrating fundamental concepts such as
 - Dependency Injection: Built-in support for managing dependencies and promoting modular architecture.
 - Configuration Files: Utilizes appsettings.json and appsettings.Development.json for environment-specific settings.
 - Basic security Authentication process 
+- Swagger UI: Documenting the APIs with a proper manner
 - Containerization: shipping and deploying the application using Docker
 - .editorconfig: Defines consistent coding styles across the project.
 - Visual Studio Solution (.sln): Organizes project files for development in Visual Studio.
