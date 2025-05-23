@@ -5,7 +5,7 @@ A simple ASP.NET Core Web API project demonstrating fundamental concepts such as
 - .NET 8.0: Latest version of the .NET platform for building cross-platform applications.
 - ASP.NET Core Web API: Framework for building RESTful APIs with .NET.
 - Entity Framework Core: Object-Relational Mapper (ORM) for data access.
-- SQLite: Lightweight, file-based relational database used for development and testing.
+- SQLServer databasee: Relational database for data storage.
 - FluentValidation: Library for building strongly-typed validation rules.
 - Dependency Injection: Built-in support for managing dependencies and promoting modular architecture.
 - Configuration Files: Utilizes appsettings.json and appsettings.Development.json for environment-specific settings.
